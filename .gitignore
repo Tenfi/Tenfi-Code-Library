@@ -1,0 +1,13 @@
+/.idea
+/target
+
+
+.class
+.project
+.settings
+.classpath
+*.iml
+.idea
+*.adoc
+*.html
+

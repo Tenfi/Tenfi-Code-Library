@@ -9,17 +9,12 @@ import java.sql.*;
  */
 
 public class Transaction {
-    // JDBC连接的URL,不同数据库有不同的格式:
-    static final String URL = "jdbc:postgresql://localhost:5432/postgres";
-    static final String USER = "postgres";
-    static final String PASSWORD = "postgres";
-
     public static void main(String[] args) throws SQLException {
         Connection conn = null;
         Savepoint savepoint = null;
         try {
             // 获取连接
-            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");
             // 设定隔离级别
             conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
             // 关闭自动提交，相当于SQL语句中的BEGAIN

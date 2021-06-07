@@ -9,17 +9,12 @@ package JDBC;
 import java.sql.*;
 
 public class CRUD {
-    // JDBC连接的URL,不同数据库有不同的格式:
-    static final String URL = "jdbc:postgresql://localhost:5432/postgres";
-    static final String USER = "postgres";
-    static final String PASSWORD = "postgres";
-
     public static void main(String[] args) {
         // 初始化需要插入的数据
         Student[] students = new Student[]{new Student("Tom", 12, "M"),
                 new Student("Ming", 13, "W"), new Student("Wang", 12, "M")};
         // 获取连接:
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
+        try (Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");) {
             // 插入，其中?表示占位符
             try (PreparedStatement ps = conn.prepareStatement("INSERT INTO public.javaBuild (name,age,gender) VALUES (?,?,?)")) {
                 // 对同一个PreparedStatement反复设置参数并调用addBatch():

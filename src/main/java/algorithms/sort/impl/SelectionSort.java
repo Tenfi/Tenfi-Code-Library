@@ -1,6 +1,6 @@
-package Algorithms.sort.impl;
+package algorithms.sort.impl;
 
-import Algorithms.sort.AbstractSort;
+import algorithms.sort.AbstractSort;
 
 import static Algorithms.sort.utils.CompareUtil.swap;
 

@@ -1,8 +1,8 @@
-package Algorithms.sort.impl;
+package algorithms.sort.impl;
 
-import Algorithms.sort.AbstractSort;
+import algorithms.sort.AbstractSort;
 
-import static Algorithms.sort.utils.CompareUtil.swap;
+import static algorithms.sort.utils.CompareUtil.swap;
 
 /**
  * 冒泡排序的基本实现

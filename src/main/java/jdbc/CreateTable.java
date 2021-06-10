@@ -1,4 +1,4 @@
-package JDBC;
+package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 /**
  * @author huangtengfei
- * @description
+ * @description 创建表测试
  * @time 2021/6/7 18:43
  */
 public class CreateTable {

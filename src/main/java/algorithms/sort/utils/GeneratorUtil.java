@@ -1,4 +1,4 @@
-package Algorithms.sort.utils;
+package algorithms.sort.utils;
 
 public class GeneratorUtil {
     public static int[] generateArray(int len, int range) {

@@ -1,4 +1,4 @@
-package Algorithms.sort;
+package algorithms.sort;
 
 public abstract class AbstractSort {
     /**

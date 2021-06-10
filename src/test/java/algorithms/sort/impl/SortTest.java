@@ -1,10 +1,10 @@
-package Algorithms.sort.impl;
+package algorithms.sort.impl;
 
-import Algorithms.sort.AbstractSort;
+import algorithms.sort.AbstractSort;
 import org.junit.Test;
 
-import static Algorithms.sort.utils.GeneratorUtil.generateArray;
-import static Algorithms.sort.utils.PrintUtil.printArray;
+import static algorithms.sort.utils.GeneratorUtil.generateArray;
+import static algorithms.sort.utils.PrintUtil.printArray;
 
 public class SortTest {
     /**

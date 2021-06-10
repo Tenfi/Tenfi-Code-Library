@@ -1,4 +1,4 @@
-package Algorithms.sort.utils;
+package algorithms.sort.utils;
 
 public class CompareUtil {
     public static void swap(int[] list, int i, int j) {

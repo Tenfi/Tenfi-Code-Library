@@ -1,20 +1,19 @@
-package JDBC;
-
-/**
- * @author huangtengfei
- * @description
- * @time 2021/6/7 18:46
- */
+package jdbc;
 
 import java.sql.*;
 
+/**
+ * @author huangtengfei
+ * @description 增删改查测试
+ * @time 2021/6/7 18:46
+ */
 public class CRUD {
     public static void main(String[] args) {
         // 初始化需要插入的数据
         Student[] students = new Student[]{new Student("Tom", 12, "M"),
                 new Student("Ming", 13, "W"), new Student("Wang", 12, "M")};
         // 获取连接:
-        try (Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");) {
+        try (Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres")) {
             // 插入，其中?表示占位符
             try (PreparedStatement ps = conn.prepareStatement("INSERT INTO public.javaBuild (name,age,gender) VALUES (?,?,?)")) {
                 // 对同一个PreparedStatement反复设置参数并调用addBatch():

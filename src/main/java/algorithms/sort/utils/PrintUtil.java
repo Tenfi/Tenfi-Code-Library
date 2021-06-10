@@ -1,4 +1,4 @@
-package Algorithms.sort.utils;
+package algorithms.sort.utils;
 
 public class PrintUtil {
     public static void printArray(int[] arr) {

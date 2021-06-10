@@ -1,12 +1,12 @@
 package Algorithms.sort.impl;
 
 import Algorithms.sort.AbstractSort;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static Algorithms.sort.utils.GeneratorUtil.generateArray;
 import static Algorithms.sort.utils.PrintUtil.printArray;
 
-class SortTest {
+public class SortTest {
     /**
      * 测试排序算法是否成功，以及耗时
      *

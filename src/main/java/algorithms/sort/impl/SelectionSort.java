@@ -2,7 +2,7 @@ package algorithms.sort.impl;
 
 import algorithms.sort.AbstractSort;
 
-import static Algorithms.sort.utils.CompareUtil.swap;
+import static algorithms.sort.utils.CompareUtil.swap;
 
 /**
  * 选择排序算法实现

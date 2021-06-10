@@ -27,11 +27,12 @@ class SortTest {
             }
         }
         long endTime = System.currentTimeMillis();
-        System.out.printf("{%s}排序成功！耗时：{%.2f}s", sortMethod.getClass().getName(), (endTime - startTime) / 60.0);
+        System.out.printf("{%s}排序成功！耗时：{%.2f}s \n", sortMethod.getClass().getName(), (endTime - startTime) / 60.0);
     }
 
     @Test
-    public void BubbleTest() {
+    public void testSort() {
         test(new BubbleSort());
+        test(new SelectionSort());
     }
 }

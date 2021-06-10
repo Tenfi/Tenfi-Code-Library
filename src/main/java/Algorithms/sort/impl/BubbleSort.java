@@ -6,6 +6,7 @@ import static Algorithms.sort.utils.CompareUtil.swap;
 
 /**
  * 冒泡排序的基本实现
+ * 时间复杂度 O（n）2
  */
 public class BubbleSort extends AbstractSort {
     @Override

@@ -34,5 +34,6 @@ public class SortTest {
     public void testSort() {
         test(new BubbleSort());
         test(new SelectionSort());
+        test(new InsertSort());
     }
 }

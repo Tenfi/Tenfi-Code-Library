@@ -2,8 +2,6 @@ package algorithms.sort.impl;
 
 import algorithms.sort.AbstractSort;
 
-import static algorithms.sort.utils.CompareUtil.swap;
-
 /**
  * 冒泡排序的基本实现
  * 时间复杂度 O（n）2

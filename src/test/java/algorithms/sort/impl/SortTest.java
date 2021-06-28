@@ -32,8 +32,8 @@ public class SortTest {
 
     @Test
     public void testSort() {
-        test(new BubbleSort());
-        test(new SelectionSort());
-        test(new InsertSort());
+//        test(new BubbleSort());
+//        test(new SelectionSort());
+//        test(new InsertSort());
     }
 }

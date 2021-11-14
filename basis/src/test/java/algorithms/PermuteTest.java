@@ -24,16 +24,16 @@ public class PermuteTest {
     }
 
     public static void main(String[] args) {
-//        // 不重叠全排列
-//        int[] nums = new int[]{1, 2, 3};
-//        Stack<Integer> res = new Stack<Integer>();
-//        boolean[] flag = new boolean[nums.length];
-//        permute(res, nums, flag);
-        // N皇后
-        int num = 4;
-        Stack<Integer> res = new Stack<>();
-        boolean[] flag = new boolean[num];
-        solveNQueens(res, flag, num);
+        // 不重叠全排列
+        int[] nums = new int[]{1, 2,2, 3};
+        Stack<Integer> res = new Stack<Integer>();
+        boolean[] flag = new boolean[nums.length];
+        permute(res, nums, flag);
+//        // N皇后
+//        int num = 4;
+//        Stack<Integer> res = new Stack<>();
+//        boolean[] flag = new boolean[num];
+//        solveNQueens(res, flag, num);
     }
 
     public static void solveNQueens(Stack<Integer> res, boolean[] flag, int num) {
